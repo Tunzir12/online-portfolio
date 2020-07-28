@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tunzira</title>
+
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="stylesheet" href="resources/css/responsinve.css">
+        <link rel="stylesheet" href="vendors/css/grid.css">
+        <link rel="stylesheet" href="vendors/css/normalize.css">
+ 
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200&display=swap" rel="stylesheet"> 
+
+
+        <script src="https://kit.fontawesome.com/5fd53c1c0f.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+    <!-- =========Start header section==========-->
+        <header id="header">
+
+                <!--==============Navigation================-->
+        <nav>
+            <div class="row">
+                <div class="logo">
+                    <a href="#header">tunzira</a>
+                </div>
+                <ul class="main-nav">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">services</a></li>
+                    <li><a href="#portfolio">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+                    <div id="mynav" class="overlay">
+                        <a href="javascript:void{}" onclick="closeNav()" class="close-btn">&times</a>
+
+                        <div class="overlay-content">
+                            <a onclick="closeNav()" href="#header">Home</a>
+                            <a onclick="closeNav()" href="#about">About</a>
+                            <a onclick="closeNav()" href="#service">services</a>
+                            <a onclick="closeNav()" href="#portfolio">Works</a>
+                            <a onclick="closeNav()" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+            <div class="row header">
+                    <span>Hello I am</span>
+                    <h1>Maliha tunzira</h1>
+            </div>
+        </header>
+
+
+
+    <!--==============About Section=============-->
+
+        <section class="about-section js-stick" id="about">
+            <div class="row">
+                <div class="col span_1_of_2">
+                    <img src="resources/img/aboutme.png">
+                </div>
+                <div class="col span_1_of_2">
+                    <h3>About Me</h3>
+                    <p>Passionate designer & developer who loves simplicity in things and crafts beautiful user interfaces with love. I have skills on programming languages like C and C++. Also I have skills on JavaScript, PHP, html5, CSS3, Bootstrap etc. For database I use MySQL or MS SQL server.</p>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Bootstrap</li>
+                        <li>MySQL</li>
+                        <li>Ms SQL server</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+
+
+
+    <!--=============Service Section==============-->
+
+    <section class="service-section" id="service">
+        <div class="row head-title">
+            <span>What I do</span>
+            <h2>My Services</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3 box">
+                <i class="fas fa-palette"></i>
+                <h3>Web Development</h3>
+                <p>Modern and mobile-ready website that will help of your marketing.</p>
+            </div>
+            <div class="col span_1_of_3 box">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Graphic Design</h3>
+                <p>Modern and mobile-ready website that will help of your marketing.</p>
+            </div>
+            <div class="col span_1_of_3 box">
+                <i class="fas fa-th"></i>
+                <h3>Front-End Design</h3>
+                <p>Modern and mobile-ready website that will help of your marketing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--=============Resume Section============-->
+
+    <section class="resume-section">
+        <div class="row head-title">
+            <span>My resume</span>
+            <h2>My expertise</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 box">
+                <span class="title">Education</span>
+                 <div class="box-col">
+                     <h3>Bachelors in Computer Science and Engineering</h3>
+                     <span>2013-2019</span>
+                     <p>East West University</p>
+                 </div>
+                 <div class="box-col">
+                    <h3>Higher Secondary certificate (science)</h3>
+                    <span>2011-2013</span>
+                    <p>Shiddheswari Girls College</p>
+                </div>
+                <div class="box-col">
+                    <h3>secondary school certificate (Science)</h3>
+                    <span>2006-2011</span>
+                    <p>Motijheel Model High School</p>
+                </div>
+            </div>
+
+            <div class="col span_1_of_2 box">
+                <span class="title">My Skills</span>
+                     <div class="skill-bar">
+                         <ul>
+                            <li class="c">C</li>
+                            <li class="cpp">C++</li>
+                            <li class="js">JavaScript</li>
+                            <li class="html">HTML5</li>
+                            <li class="css">CSS3</li>
+                            <li class="php">PHP</li>
+                            <li class="bts">Bootstrap</li>
+                         </ul>
+                     </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===============Portfolio==================-->
+
+    <section class="portfolio" id="portfolio">
+        <div class="row head-title">
+            <span>Portfolio</span>
+            <h2>My works</h2>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_3 box">
+                <a href="resources/project1/index.html" target="_blank">Click to view</a> 
+            </div>
+
+            <div class="col span_1_of_3 box">
+                    <a href="resources/project1/index.html" target="_blank">Click to view</a>
+            </div>
+
+            <div class="col span_1_of_3 box">
+                    <a href="resources/project1/index.html" target="_blank">Click to view</a>
+            </div>
+        </div>
+
+        <div class="row button">
+            <button>see more</button>
+        </div>
+    </section>
+
+    <!--===============Hire -me==================-->
+
+    <section class="hire-me" id="hire-me">
+        <div class="row">
+            <span>Let's Work Together</span>
+            <a href="#contact">Email me</a>
+        </div>
+    </section>
+
+    <!--===============Contact==================-->
+
+<section class="contact" id="contact">
+        <div class="row head-title">
+            <span>get in touch</span>
+            <h2>Contact Me</h2>
+        </div>
+
+        <div class="row map">
+            <h3>my location</h3>
+            <div id="map"></div>
+        </div>
+
+
+
+        <div class="row rtr">
+            <div class="col span_1_of_3 con-box">
+                <i class="fas fa-map-marked-alt"></i>
+                <address>Shantinagar, Dhaka, Bangladesh</address>
+                <h4>address</h4>
+            </div>
+            <div class="col span_1_of_3 con-box">
+                <i class="fas fa-mobile-alt"></i>
+                <address><a href="">+880 468 823</a></address>
+                <h4>call me</h4>
+            </div>
+            <div class="col span_1_of_3 con-box">
+                <i class="fas fa-envelope"></i>
+                <address><a href="mailto:mtunzira1@gmail.com">mtunzira1@gmail.com</a></address>
+                <h4>email me</h4>
+            </div>
+        </div>
+
+<div class="row">
+    <center><h3 class="hd">contact form</h3></center>
+    <div class="col span_2_of_2 box">
+        
+        <form name="mailme" action="mailto:mtunzira1@gmail.com" method="POST">
+            <div class="row">
+                <div class="col span_1_of_2"><input type="text" name="name" id="name" placeholder="your name*" required></div>
+
+                <div class="col span_1_of_2"><input type="email" name="email" id="email" placeholder="Email*" required></div>
+            </div>
+
+            <div class="row">
+                <div class="col span_2_of_2"><textarea name="msg" placeholder="Your Message*" id="msg" required></textarea></div>
+            </div>
+            <center>
+            <div class="row">
+            <input type="submit" value="Send message">
+            </div>
+            </center>
+        </form>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+
+    <!--===============Footer==================-->
+
+    <footer>
+        <div class="row">
+            <ul>
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                   <a href=""><i class="fab fa-twitter"></i></a> 
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                   <a href=""><i class="fab fa-instagram"></i></a> 
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                </li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!--==========JavaScript=============-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/main.js"></script>
+    <script src="resources/js/dropdown.js"></script>
+    <script src="resources/js/sticky.js"></script>
+    
+<!--------------------maps---------------->
+
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAspmciNMKNg4KRwYQ4XB4Izb3J7enwAXk&callback=initMap">
+    </script>
+
+
+
+    </body>
+</html>

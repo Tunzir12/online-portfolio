@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.row{
+    max-width: 1140px;
+    margin: auto;
+}
+section{
+    overflow: hidden;
+    padding: 10px 0px;
+}
+ul li{
+    list-style: none;
+}
+
+/* ================Header==============*/
+header{
+    position: relative;
+    height: 80vh;
+    background-image: linear-gradient( rgba(161, 69, 69, 0.5),rgba(0, 0, 0, 0.5)), url(../img/img1.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+header span{
+    font-size: 18px;
+}
+
+.header span,
+.header h1{
+     position:absolute;
+     top: 35%;
+     left: 40%;
+     transform: translate( -50, -50);
+     text-align: center;
+     color: #ffffff;
+}
+
+/* ==============Navigation=============== */
+ 
+nav{
+    background-color: rgba(102, 28, 131, 0.411);
+    overflow: hidden;
+    height: 7vh;
+}
+.logo{
+    margin-top: 10px;
+     float: left;
+}
+.logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size:24px;
+    font-weight: 700;
+}
+.main-nav{
+    float: right;
+    margin-top: 1rem;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.main-nav li a:link, 
+.main-nav li a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    background-color: rgba(100, 58, 121, 0);
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.main-nav li:hover a:link, 
+.main-nav li:hover a:visited{
+    background: transparent;
+    font-weight: 700;
+    border: 1px solid white;
+}
+
+/* ============BARS================*/
+
+.mobile-menu i{
+    color: white;
+    font-size: 30px;
+    float: right;
+    margin-right: 10px;
+    display: none;
+}
+
+.mobile-menu i:hover{
+    cursor: pointer;
+}
+
+.overlay{
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .5s;
+}
+.overlay-content{
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+.close-btn{
+    float: right;
+    margin-right: 10px;
+}
+.overlay a{
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 2em;
+}
+
+/* --------------sticky ---------------*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.753);
+    padding: 1rem 0;
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.904);
+}
+
+.sticky .logo{
+    margin-top: 0;
+}
+.sticky .main-nav{
+    margin-top: 0;
+}
+
+
+
+/* ==============ABOUT=============*/
+
+.about-section{
+    height: 80vh;
+}
+.about-section .row{
+    width: 70%;
+    color: #008080;
+}
+.about-section img{
+    width: 80%;
+    margin-left: 5rem;
+}
+.about-section h3{
+    font-size: 24px;
+    margin-top: 8rem;
+}
+.about-section p{
+    font-size: 16px;
+    margin-top: 2rem;
+}
+.about-section li{
+    display: inline-block;
+    margin-top:2rem;
+    margin-right: 1rem;
+    font-size: 12px;
+    padding: 3px;
+    border: 2px solid lightblue;
+}
+
+
+/* ===============Service==================*/
+
+
+.service-section{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/wall-bricks-220182.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    padding-top: 3rem;
+    height: 90vh;
+    
+}
+.head-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+.head-title span{
+    font-size: 24px;
+    margin-bottom: 2rem;
+}
+.head-title span::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 6%;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin:auto;
+}
+.service-section .box{
+    border: 2px solid black;
+    text-align: center;
+    height: 250px ;
+    padding: 2rem;
+}
+
+.service-section i{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.head-title h2{
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+.service-section p{
+    font-size: 18px;
+}
+
+.service-section h3{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+
+
+/* ==============Resume=========== */
+
+
+.resume-section .title{
+    margin-left: 4rem;
+    font-size: 24px;
+    line-height: 58px;
+    font-weight: 600;
+    color: mediumslateblue;
+    letter-spacing: 5px;
+}
+
+.box-col{
+    background-color: rgb(247, 224, 215);
+    padding: 20px;
+    margin-bottom: 2rem;
+    width: 80%; 
+    border-radius: 10px;
+    margin-left: 3rem;
+}
+.box-col span{
+    background-color: magenta;
+    padding: 0 3px;
+    border-radius: 5px;
+    color: black;
+}
+.box-col h3{
+    font-size: 18px;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+.box-col span{
+    font-size: 14px;
+    margin-bottom: 2rem;
+
+}
+.box-col p{
+    font-size: 16px;
+    margin-top: 2rem;
+}
+
+
+/*============= Skill bar ===============*/
+
+.skill-bar{
+    width: 80%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 3rem;
+}
+.skill-bar li{
+    position: relative;
+    margin: 30px 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.skill-bar li::before{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 1rem;
+    border-radius: 10px;
+    background-color: #7c7c7c7e;
+}
+
+.skill-bar li::after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 0%;
+    height: 1rem;
+    border-radius: 10px;
+
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.skill-bar li.c:after{
+    animation-name: c;
+    background-color: saddlebrown;
+}
+.skill-bar li.cpp:after{
+    animation-name: cpp;
+    background-color: slateblue;
+}
+.skill-bar li.js:after{
+    animation-name: js;
+    background-color: tomato;
+}
+.skill-bar li.html:after{
+    animation-name: html;
+    background-color: teal;
+}
+.skill-bar li.css:after{
+    animation-name: css;
+    background-color: yellow;
+}
+.skill-bar li.php:after{
+    animation-name: php;
+    background-color: green;
+}
+.skill-bar li.bts:after{
+    animation-name: bts;
+    background-color: indigo;
+}
+
+
+/* ===========Portfolio ===============*/
+
+.portfolio{
+    height: 130vh;
+    padding-top: 10vh;
+}
+
+
+.portfolio .box{
+    margin-top: 50px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/Cuda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 124px 10px 106px 118px;
+    margin-bottom: 50px;
+}
+
+.portfolio .box a
+{
+    padding: 15px;
+    border: 4px solid white;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/*
+.portfolio .button{
+    text-align: center; 
+       
+}
+.portfolio .button a{
+    padding: 10px 50px;
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ */
+
+ .button{
+     padding: 36rem 0rem 0rem 50rem;
+ }
+ .button button{
+     font-size: 16px;
+     padding: 15px 30px;
+     color: white;
+     text-transform: uppercase;
+     font-weight: 700;
+     background-color: rgba(21, 6, 24, 0.911);
+ }
+.button button:hover{
+    cursor: pointer;
+}
+/* ===========hire me===========*/
+
+.hire-me{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    height: 40vh;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../img/abstract-art-background-blur-586744.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.hire-me .row{
+    margin-top: 100px;
+    color:white;
+}
+
+.hire-me span{
+    font-size: 24px;
+    margin-bottom: 4rem;
+}
+.hire-me span::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 6%;
+    border-radius: 40px;
+    background-color: rgba(202, 202, 202, 0.603);
+    margin:auto;
+}
+.hire-me a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border: 1px ridge white;
+    padding: 4px 10px;
+}
+
+
+
+/*================Contact ================*/
+
+
+.con-box{
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 20px 30px;
+    border: 1px solid rgb(236, 234, 234);
+    box-shadow:3px 3px rgba(216, 214, 214, 0.5);
+}
+
+.con-box i{
+    font-size: 35px;
+    margin-bottom: 2rem;
+    color: rgb(59, 59, 59);
+}
+.con-box address,
+.con-box h4{
+    font-size: 16px;
+    margin-bottom: 1rem;
+    color: rgb(59, 59, 59);
+}
+
+.con-box a{
+    text-decoration:none;
+    color: rgb(59, 59, 59);
+}
+
+.con-box h4{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.map{
+   padding-top: 8rem;
+   padding-bottom: 10rem;
+}
+.map h3,
+.contact .hd{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: rgb(145, 145, 145);
+}
+#map{
+    width: 100%;
+    height: 400px;
+  }
+ 
+  .rtr{
+      padding-bottom: 25rem;
+  }
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea{
+
+    width:100%;
+    background-color: rgb(39, 21, 71);
+    padding: 2rem;
+    font-size: 16px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    color: white;
+   }
+
+.contact textarea{
+    height: 280px;
+}
+.contact input[type="submit"]{
+    padding: 2rem 4rem;
+    font-size: 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(116, 38, 116);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.contact input[type="submit"]:hover{
+    cursor: pointer;
+}
+.contact form{
+    margin-bottom: 10rem;
+    width: 70%;
+    margin-left: 16rem;
+}
+
+
+/*=============== FOoter ==============*/
+
+footer li{
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 16px;
+
+}
+footer ul{
+    text-align: center;
+    padding-top: 25px;
+}
+
+footer{
+    overflow: hidden;
+    height: 10vh;
+    background-color: rgb(115, 74, 153);
+}
+footer a{
+    text-decoration: none;
+    color: cornsilk;
+    width: 10px;
+
+}
+
+footer i{
+    transition: .6s ease-out;
+    -webkit-transition: .6s ease-out;
+    -moz-transition:.6s ease-out;
+}
+footer a :hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+}

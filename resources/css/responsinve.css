@@ -1,0 +1,136 @@
+@keyframes c{
+    to{
+        width: 55%;
+    }
+}
+@keyframes cpp{
+    to{
+        width: 60%;
+    }
+}
+@keyframes js{
+    to{
+        width: 68%;
+    }
+}
+@keyframes html{
+    to{
+        width: 85%;
+    }
+}
+@keyframes css{
+    to{
+        width: 90%;
+    }
+}
+@keyframes php{
+    to{
+        width: 75%;
+    }
+}
+@keyframes bts{
+    to{
+        width: 80%;
+    }
+}
+
+/* ========= mobile version ========== */
+
+@media only screen and (max-width:1024px){
+    html{
+        font-size: 55.2%;
+    }
+    header{
+        height: 70vh;
+    }
+    .about-section{
+        height: 70vh;
+    }
+    .map{
+        padding-top: 5rem;
+    }
+    .contact form{
+        margin-bottom: 5rem;
+    }
+    .portfolio{
+        height: 120vh;
+    }
+    .portfolio .box{
+        padding: 124px 10px 106px 88px;
+    }
+    .portfolio .box a{
+        padding:5px;
+    }
+}
+
+@media only screen and (max-width:760px){
+    html{
+        font-size: 42.2%;
+    }
+    header{
+        height: 70vh;
+    }
+    .about-section{
+        height: 80vh;
+    }
+    .map{
+        padding-top: 3rem;
+    }
+    .rtr{
+        padding-bottom: 32rem;
+    }
+    .portfolio .box{
+        padding: 85px 10px 68px 74px;
+    }
+    
+
+}
+
+@media only screen and (max-width:480px){
+    html{
+        font-size: 26.2%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .mobile-menu i{
+        display: block;
+    }
+    .about-section{
+        height: 100vh;
+    }
+    .service-section{
+        height: 138vh;
+    }
+    .service-section .col:first-child {
+        margin-left: 5%;
+    }
+    .service-section .col,
+    .portfolio .col{
+        margin: 1% 0% 1% 5%;
+    }
+    .service-section .box{
+        height: 185px;
+    }
+    .service-section .span_1_of_3 {
+        width: 90%;
+    }
+    .portfolio{
+        height: 170vh;
+    }
+    .portfolio .col:first-child {
+        margin-left: 5%;
+    }
+    .portfolio .box {
+        padding: 98px 54px 97px 152px;
+        margin-top: 0%;
+    }
+    .portfolio .span_1_of_3 {
+        width: 90%;
+    }
+    .button{
+        padding: 36rem 0rem 0rem 43rem;
+    }.hire-me a{
+        font-size: 12px;
+    }
+}

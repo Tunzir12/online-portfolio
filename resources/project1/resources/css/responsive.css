@@ -1,0 +1,22 @@
+@media only screen and (max-width: 1024px){
+    .row{
+        margin: 0 18px;
+    }
+    .main-nav li {
+        display: none;
+    }
+    html{
+        font-size: 55.5%;
+    }
+    .client-img{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    .client-review{
+        float: none;
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+    }
+}
